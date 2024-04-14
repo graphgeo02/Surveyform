@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thank You</title>
+</head>
+<body>
+<p style="color:inherit; font-size:2rem; text-align:center">Thank you your response have been recorded</p>
+<div id="message"></div>
+</body>
+</html>
