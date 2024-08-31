@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="index.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top-section">
+    <header>
+      <img src="./img/main.png" width="50" class="logo" />
+      <img src="./img/logo.png" width="70" class="logo" />
+    </header>
+  </div>
+  <form id="myForm" method="" action="">
+    <h1 style="color: white">Data Collection Form</h1>
+    <p class="center-text">Please take a few minutes to fill out these questions and share your learning experience so
+      far with us </p>
+    <label for="fullName">
+      Full Name:</label><br>
+    <input type="text" name="fullName" id="fullName" placeholder=" Enter Your Name" required>
+    <br>
+    <label for="email">
+      Email:</label><br>
+    <input type="email" name="email" id="email" placeholder=" Enter Your Email" required>
+    <br>
+    <label for="fellowid">
+      Fellow Id:</label><br>
+    <input type="text" name="fellowid" id="fellowid" placeholder=" Enter Your Fellew Id" required>
+    <br>
+    <label for="age">Age:</label><br>
+    <input type="number" name="age" id="age" placeholder=" Enter Your Age" required><br>
+
+    <label for="location"> Location:</label><br>
+    <input type="text" name="location" id="location" placeholder=" Enter Your Location" required><br>
+    <label for="gender">Gender:</label><br>
+    <div id="message"></div>
+    <select name="gender" id="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+    <p style=" margin-top: 0.5rem; margin-bottom: -0.6rem; font-size: 0.8rem">Course:</p>
+    <select>
+      <option>(Select Your Course)</option>
+      <option value="1">Software Development </option>
+      <option value="2">Data Science </option>
+      <option value="3">Cloud Computing</option>
+      <option value="4">Data Analysis & Visualization</option>
+      <option value="5">DevOp</option>
+      <option value="6">UI/UX</option>
+      <option value="7">Product Management</option>
+      <option value="8">Game Development</option>
+      <option value="9">Cyber Security</option>
+      <option value="10">Quality Assurance</option>
+    </select>
+    <p>Have you been able to access your course content with your online partner?</p>
+    <span style="color:white; font-size:0.8rem">Your online partner is either</span>
+    <span style="color:white; font-size:0.8rem">Alts School, ProductDiv, Coursera, or IHS</span>
+    <br>
+    <label>
+      <input type="checkbox" id="yes" value="true"> Yes
+    </label><br>
+    <label>
+      <input type="checkbox" id="no" value="false"> No
+    </label>
+    <br>
+    <br>
+
+    <p>Onboarding to the online learning plate form:</p>
+    <label><input type="radio" name="onboarding" value="5" required> Very Satisfied</label><br>
+    <label><input type="radio" name="onboarding" value="4" required> Satisfied</label><br>
+    <label><input type="radio" name="onboarding" value="3" required> Neutral</label><br>
+    <label><input type="radio" name="onboarding" value="2" required> Unsatisfied</label><br>
+    <label><input type="radio" name="onboarding" value="1" required> Very Unsatisfied</label><br>
+
+    <p>Course content and materials:</p>
+    <label><input type="radio" name="meeting" value="5" required> Very Satisfied</label><br>
+    <label><input type="radio" name="meeting" value="4" required> Satisfied</label><br>
+    <label><input type="radio" name="meeting" value="3" required> Neutral</label><br>
+    <label><input type="radio" name="meeting" value="2" required> Unsatisfied</label><br>
+    <label><input type="radio" name="meeting" value="1" required> Very Unsatisfied</label><br>
+
+    <p>Learning instructions:</p>
+    <label><input type="radio" name="course_content" value="5" required> Very Satisfied</label><br>
+    <label><input type="radio" name="course_content" value="4" required> Satisfied</label><br>
+    <label><input type="radio" name="course_content" value="3" required> Neutral</label><br>
+    <label><input type="radio" name="course_content" value="2" required> Unsatisfied</label><br>
+    <label><input type="radio" name="course_content" value="1" required> Very Unsatisfied</label><br>
+
+    <p>Forum engagement and interactions:</p>
+    <label><input type="radio" name="material" value="5" required> Very Satisfied</label><br>
+    <label><input type="radio" name="material" value="4" required> Satisfied</label><br>
+    <label><input type="radio" name="material" value="3" required> Neutral</label><br>
+    <label><input type="radio" name="material" value="2" required> Unsatisfied</label><br>
+    <label><input type="radio" name="material" value="1" required> Very Unsatisfied</label><br>
+
+    <p>Personal growth and skills development so far:</p>
+    <label><input type="radio" name="training_provider" value="5" required> Very Satisfied</label><br>
+    <label><input type="radio" name="training_provider" value="4" required> Satisfied</label><br>
+    <label><input type="radio" name="training_provider" value="3" required> Neutral</label><br>
+    <label><input type="radio" name="training_provider" value="2" required> Unsatisfied</label><br>
+    <label><input type="radio" name="training_provider" value="1" required> Very Unsatisfied</label><br>
+    <br>
+    <p style="font-size: 0.8rem">Have you visited the physical center of your training provider?</p>
+    <select>
+      <option value="true">Yes</option>
+      <option value="false">No</option>
+    </select>
+
+    <p style="font-size:0.8rem">Who is your trianing provider?</p>
+    <span style="color:white; font-size:0.8rem">Please write out full organization name of your training
+      provider</span>
+    <br>
+    <input type="text" name="comment" placeholder=" Enter Your Training Provider Name" required>
+    <p style="font-size: 0.8rem">On scale 1 to 5(with 5 being the highest) rate your engament and interaction with
+      training provider</p>
+    <input type="range" min="1" max="5" onchange="updateValue(this.value)" required>
+    <p>Value: <span id="rangeValue">5</span></p>
+
+    <p>How can we improve your learning experience? </p>
+    <textarea name="bio" rows="5" cols="5" placeholder=" Please Enter Your Comment Here...">
+</textarea >
+    <br>
+    <label>
+      <input type="checkbox" id="terms" ><span style="color:white" required> I confirm that the information being submit is
+        true</span>
+    </label><br>
+    <input type="submit" value="submit">
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
